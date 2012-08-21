@@ -1,0 +1,6 @@
+<header class="location">{{data.nearest_area.0.region.0.value}}<hr/></header>
+<div class="temperature">{{data.current_condition.0.temp_C}}<sup class="degrees">o</sup><sup class="type">C</sup></div>
+<div class="conditions">{{data.current_condition.0.weatherDesc.0.value}}</div>
+<div class="conditionCode">{{data.current_condition.0.weatherCode}}</div>
+<div class="date">Wind speed: {{data.current_condition.0.winddir16Point}} at {{data.current_condition.0.windspeedKmph}}km/h</div>    
+<div class="date">Observation time: {{data.current_condition.0.observation_time}}</div>

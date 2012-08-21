@@ -1,0 +1,9 @@
+{{#each data.weather}}
+  <section class="weather forecast">
+    <header class="day">{{dayOfWeek date}}<hr/></header>
+    <div class="temperature highlow">{{tempMaxC}}<sup class="degrees">o</sup>/{{tempMinC}}<sup class="degrees">o</sup></div>
+    <div class="conditions">{{weatherDesc.0.value}}</div>
+    <div class="conditionCode">{{weatherCode}}</div>
+    <div class="date">Wind speed: {{winddir16Point}} at {{windspeedKmph}}km/h</div>
+  </section>
+{{/each}}
